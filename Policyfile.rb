@@ -4,13 +4,13 @@
 # https://github.com/opscode/chef-dk/blob/master/POLICYFILE_README.md
 
 # A name that describes what the system you're building with Chef does.
-name "example_application"
+name "aar"
 
 # Where to find external cookbooks:
 default_source :community
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list "cookbook::recipe", "other_cookbook::recipe"
+run_list "aar::default"
 
 # Specify a custom source for a single cookbook:
-# cookbook "development_cookbook", path: "../cookbooks/development_cookbook"
+ cookbook "aar", path: "cookbooks/aar"
